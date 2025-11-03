@@ -1,2 +1,1 @@
-# Proyecto 2 Road Runner Filter 
-Tienda de running
+Proyecto nª2 de Rock The Code.Tienda de zapatillas de running y trail.

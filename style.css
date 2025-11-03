@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+  /* COLORS */
+  --csm-color-100: #d4d47e;
+  --csm-color-200: #7474eb;
+  --csm-color-300: #a9a9a9;
+  --csm-color-400: #ff2828;
+  --csm-color-500: #00d400;
+  /* TEXT-COLORS*/
+  --csm-text-enlaces: #8911c9;
+  --csm-text-button: #131212;
+  --csm-text-footer:white;
+  --csm-text-header: #a9a9a9;
+  --csm-text-precio: #ff2828;
+  --csm-text-section: #00d400;
+  --csm-text-outlet:rgb(127, 9, 9);
+
+  /* BACKGROUNDS-COLORS */
+  --csm-background-body: rgba(250, 245, 223, 0.884);
+  --csm-background-cards: #f5f0e3de;
+  --csm-background-300: #d6d6d6;
+  --csm-background-400: #ffffff;
+  --csm-background-card: #b1b1b1;
+  --csm-background-header: #b1b1b1;
+  --csm-background-footer: #131212;
+  --csm-background-button-: #15d635;
+
+  /* MARGINS */
+  --csm-margin-xs: 10px;
+  --csm-margin-s: 15px;
+  --csm-margin-m: 20px;
+  --csm-margin-l: 30px;
+  --csm-margin-xl: 40px;
+  --csm-margin-xxl: 50px;
+
+  /* PADDINGS */
+  --csm-padding-xxs:5px;
+  --csm-padding-xs: 10px;
+  --csm-padding-s: 15px;
+  --csm-padding-m: 20px;
+  --csm-padding-l: 25px;
+  --csm-padding-xl: 30px;
+  --csm-padding-xxl: 35px;
+  /*GAP*/
+  --csm-gap-xs: 10px;
+  --csm-gap-s: 15px;
+  --csm-gap-m: 20px;
+  --csm-gap-l: 25px;
+  --csm-gap-xl: 30px;
+  --csm-gap-xxl: 35px;
+
+
+  /* BORDERS */
+  --csm-border-s: 15px;
+  --csm-border-m: 25px;
+  --csm-border-l: 35px;
+  /* BORDER RADIUS */
+  --csm-radius-100: 12px;
+  
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'ubuntu', sans-serif;
+  scroll-behavior: smooth;
+  
+}
+header{
+ width: 100%;
+ display: flex;
+ padding: 20px 0;
+ justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--csm-gap-l);
+}
+header img{
+width: 200px;
+height: auto;
+display:flex;
+margin-bottom: 20px;
+padding-left: var(--csm-padding-xl);
+border-radius: var(--csm-radius-100);
+}
+nav{
+  width: auto;
+  max-width: 880px;
+  
+  }
+  .links-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:var(--csm-padding-xxs);
+    flex-wrap: wrap;
+    cursor: pointer;
+    background-color:var(--csm-background-card);
+    border-radius: var(--csm-radius-100);
+    gap: var(--csm-gap-s);
+  }
+  .links-header ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap:var(--csm-gap-m);
+
+  }
+  
+  .links-header ul.Abrir{
+    display: flex;
+  }
+  .redsocial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--csm-gap-s);
+    
+  }
+  .redsocial img{
+    width: 75px;
+    height: 50px;
+  }
+
+ .zapas-container{
+  display: flex;
+  justify-content: center;
+  gap:var(--csm-gap-xl);
+  padding: var(--csm-padding-l);
+  flex-wrap: wrap;
+  
+ 
+ }
+ .zapa-descolorida{
+  max-width: 100%;
+  max-height: 50%;
+  object-fit: contain;
+ }
+
+ .zapa-descolorida img{
+  width:100%;
+  max-height:100%;
+  object-fit:cover;
+  object-position: center ;
+ }
+ .container-img img:hover{
+  transform: scale(1.2);
+ }
+ .container-img img{
+  width: 100%;
+  height: 200px;
+  max-width: 300px;
+  object-fit:contain;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.5s;
+ }
+ 
+
+ .Carta-Zapatilla{
+  width:200px;
+  
+  display:flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius:var(--csm-radius-100);
+  
+ 
+  
+
+ }
+ .datos-zapatillas{
+  margin-top: var(--csm-margin-s);
+
+  justify-content: space-between;
+  min-height: 250px;
+  background-color: var(--csm-background-card);
+  padding: var(--csm-padding-xs);
+  border-radius: var(--csm-radius-100);
+  
+ }
+.datos-zapatillas button{
+  margin: var(--csm-margin-xs);
+  background-color: var(--csm-background-400);
+  border-radius: var(--csm-radius-100);
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 45px;
+
+ }
+ .datos-zapatillas button:hover{
+  background-color: var(--csm-color-100);
+ }
+
+ 
+footer{
+ width: 100%;
+ min-height:300px;
+ display: flex;
+ justify-content:space-evenly;
+ justify-items: center;
+align-items: center;
+flex-wrap: wrap;
+color:var(--csm-text-footer);
+background-color:var(--csm-background-footer);
+
+}
+section{
+  min-width: 150px;
+ display:flex ;
+ justify-content: center;
+ flex-direction: column;
+ align-items: start;
+
+}
+a:hover{
+  color: #7474eb;
+}
+section a{
+  margin: var(--csm-margin-s);
+}
+
+.Redes img{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  margin: var(--csm-margin-s);
+  max-width:100%;
+ height: auto;
+ width: 120px;
+
+ object-fit: contain;
+}
+
+@media (max-width: 750px) {
+  .links-header {
+    flex-direction: column;
+  }
+  .redsocial {
+    display: none;
+  }
+}
